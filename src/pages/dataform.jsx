@@ -42,6 +42,7 @@ const Data = () => {
     // if (Object.keys(formErrors).length === 0 && isSubmit) {
     //   console.log(formValues);
     if (localStorage.getItem("auth")) history.push("/detail");
+    localStorage.getItem("Values",formValues);
   }, [formValues]);
 
   const validate = (values) => {
